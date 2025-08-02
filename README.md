@@ -14,7 +14,7 @@ The --mp3 makes it work for .mp3 files, and the `-n mdx_extra_q` is optional for
 
 ## 2. Mix te resulting tracks except for the voice
 ```
-ffmpeg -i <audio1.mp3> -i <audio2.mp3> -i separated/<audio3.mp3> \
+ffmpeg -i <audio1.mp3> -i <audio2.mp3> -i <audio3.mp3> \
 -filter_complex "[0:a][1:a][2:a]amix=inputs=3:duration=longest:dropout_transition=2[aout]" \
 -map "[aout]" -c:a libmp3lame -b:a 320k  <out.mp3>
 ```
