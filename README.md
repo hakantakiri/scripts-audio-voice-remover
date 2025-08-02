@@ -18,4 +18,4 @@ ffmpeg -i <audio1.mp3> -i <audio2.mp3> -i <audio3.mp3> \
 -filter_complex "[0:a][1:a][2:a]amix=inputs=3:duration=longest:dropout_transition=2[aout]" \
 -map "[aout]" -c:a libmp3lame -b:a 320k  <out.mp3>
 ```
-This command is set for 3 files, but you can eddit the inputs and _filter_complex for more ore less files.
+This command is set for 3 files, but you can edit the inputs and _filter_complex for more ore less files.
