@@ -1,4 +1,4 @@
-# Audio without voice
+# Audio without voice using Demucs and ffmpeg
 
 ### Requirements:
 - Demucs: Installed locally inside a virtual environment
